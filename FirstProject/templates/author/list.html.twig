@@ -1,0 +1,31 @@
+<h1>List of authors </h1>
+{% set x=0 %}
+{% if tabAuthors is empty %}
+<h2>Table is empty</h2>
+    {% else %}
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Books</td>
+        <td>Action</td>
+    </tr>
+    {% for author in tabAuthors %}
+        <tr>
+            <td>{{  author.id }}</td>
+            <td>{{ author.username | upper }}</td>
+            <td>{{ author.email }}</td>
+            <td> {{ author.nb_books }}</td>
+            <td> <a href ="{{ path('app_details',{'id': author.id}) }}"> Details </a> </td>
+        </tr>
+        {% set  x=x+author.nb_books %}
+    {% endfor %}
+</table> <br>
+{% endif %}
+Number of authors: {{ tabAuthors | length }}<br>
+Number of books: {{ x }} <br>
+<img src="{{asset ('img/books.jpg') }}" alt="books"  height="300px" width="300px">
+
+
+

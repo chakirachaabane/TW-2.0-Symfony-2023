@@ -9,7 +9,7 @@ use App\Controller\HomeController;
 
 class ServiceController extends AbstractController
 {
-    #[Route('/service', name: 'app_service')] 
+    #[Route('/service', name: 'app_service1')] 
     public function index(): Response
     {
         return $this->render('service/index.html.twig', [
