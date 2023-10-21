@@ -1,0 +1,45 @@
+<div align="center " ><h1>List books</h1>
+{% if tabBooks is empty %}
+<h1>No books found</h1>
+{% else %}
+{% set published_Book=0 %}
+<table align="center" border="1">
+    <tr>
+        <td>Ref</td>
+        <td>Title</td>
+        <td>Category</td>
+        <td>Published</td>
+        <td>publicationDate</td>
+        <td>Author Name</td>
+        <td>Actions</td>
+
+    </tr>
+    {% for book in tabBooks %}
+
+
+              {% set published_Book = published_Book+1 %}
+
+
+        <tr>
+            <td>{{book.ref}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.category}}</td>
+            <td>{{book.published}}</td>
+            <td>{{book.publicationDate|date}}</td>
+            <td>{{book.author }}</td>
+            <td><a href="{{ path('update1_book',{'ref':book.ref}) }}"> Edit </a>
+                <a href="{{ path('delete1_book',{'ref':book.ref}) }}"> Delete </a>
+                <a href="{{ path('show_book',{'ref':book.ref}) }}"> Show </a>
+            </td>
+
+            </td>
+
+        </tr>
+    {% endfor %}
+</table>
+  {% endif %}
+<h5>Published_Book = {{ published_Book }}</h5>
+<h5>Unpublished_Book = {{ unpublished }}</h5><br>
+
+    <a href="{{ path('addBook') }}"> <button>Create new</button> </a>
+</div>

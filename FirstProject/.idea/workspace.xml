@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc07c659-6e46-4d88-b04a-b16a4f2c9574" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
@@ -175,9 +176,15 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\FirstProject\templates\book" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
@@ -195,6 +202,20 @@
       <workItem from="1695630138215" duration="7966000" />
       <workItem from="1695671581845" duration="1178000" />
       <workItem from="1696086055927" duration="3486000" />
+      <workItem from="1696174281907" duration="114000" />
+      <workItem from="1696235972516" duration="29000" />
+      <workItem from="1696236002515" duration="9000" />
+      <workItem from="1696236012503" duration="6719000" />
+      <workItem from="1696286434238" duration="1587000" />
+      <workItem from="1696839715601" duration="5576000" />
+      <workItem from="1696849445995" duration="791000" />
+      <workItem from="1696850261318" duration="1029000" />
+      <workItem from="1696862662554" duration="26000" />
+      <workItem from="1697391088565" duration="127000" />
+      <workItem from="1697444870937" duration="5680000" />
+      <workItem from="1697454472794" duration="13000" />
+      <workItem from="1697482771941" duration="9071000" />
+      <workItem from="1697899477599" duration="3525000" />
     </task>
     <servers />
   </component>

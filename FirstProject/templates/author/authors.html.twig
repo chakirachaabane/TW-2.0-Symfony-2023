@@ -1,0 +1,22 @@
+ <div align="center"><h1>Authors' list : </h1>
+<table align="center" border="1">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Actions</td>
+
+    </tr>
+
+    {% for author in tabAuthors %}
+        <tr>
+            <td>{{  author.id }}</td>
+            <td>{{ author.username }}</td>
+            <td>{{ author.email }}</td>
+            <td><a href="{{ path('update1_author',{'id':author.id}) }}"> Update </a>
+                <a href="{{ path('delete_author_no_book',{'id':author.id}) }}"> Delete </a></td>
+
+        </tr>
+    {% endfor %}
+</table> <br>
+ </div>

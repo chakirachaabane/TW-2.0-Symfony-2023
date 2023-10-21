@@ -1,0 +1,10 @@
+{%if book is null  %}
+{{ "Book not found" }}
+    {% else  %}
+
+    <div align="center"> <h1>Show book</h1>
+        {{  "Title of book :" ~ book.title  }} <br>
+        {{ "Publication date: " ~ book.publicationDate | date }} <br>
+        {{ "Author: " ~ book.author.username }} <br></div>
+
+{% endif %}
